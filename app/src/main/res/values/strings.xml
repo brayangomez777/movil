@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="CrearBD">Crear DB</string>
+    <string name="nombre">Digite Nombre</string>
+    <string name="telefono">Digite Telefono</string>
+    <string name="correoelectronico">Digite Correo Electronico</string>
+    <string name="botton">Guardar Registro</string>
+    <string name="menu_nuevo">Nuevo Registro</string>
+</resources>
