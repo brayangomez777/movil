@@ -13,9 +13,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.myapplication.db.DbContactos;
 import com.example.myapplication.entidades.Contactos;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class EdictarActivity extends AppCompatActivity {
 
+    FloatingActionButton fbEditar,fbEliminar;
     EditText txtNombre,txtTelefono,txtCorreo;
     Button btnGuarda;
 boolean correcto = false;
@@ -32,6 +34,10 @@ boolean correcto = false;
         txtTelefono = findViewById(R.id.txttelefono);
         txtCorreo = findViewById(R.id.txtcorreo);
         btnGuarda = findViewById(R.id.btnguardar);
+        fbEditar = findViewById(R.id.fabEditar);
+        fbEditar.setVisibility(View.INVISIBLE);
+        fbEliminar = findViewById(R.id.fabEliminar);
+        fbEliminar.setVisibility(View.INVISIBLE);
 
         if (savedInstanceState == null ){
             Bundle extras = getIntent().getExtras();
